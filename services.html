@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Services-ThriveLab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>ThriveLab</h1>
+        <p>Empowering students through opportunity!</p>
+        <a href="#services" class="btn">Explore Services</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="donation.html">Donations</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="services-container">
+
+    <div class="service-card">
+        <h2>📚 Tutoring</h2>
+        <p>
+            One-on-one and group tutoring sessions designed to
+            improve academic performance and confidence.
+        </p>
+    </div>
+
+    <div class="service-card">
+        <h2>🤝 Mentorship</h2>
+        <p>
+            Connect with mentors who provide guidance,
+            encouragement and support throughout your journey.
+        </p>
+    </div>
+
+    <div class="service-card">
+        <h2>💼 Career Guidance</h2>
+        <p>
+            Learn about career paths, CV writing,
+            interview preparation and workplace readiness.
+        </p>
+    </div>
+
+    <div class="service-card">
+        <h2>🧠 Critical Thinking</h2>
+        <p>
+            Develop problem-solving and decision-making skills
+            that help you succeed beyond the classroom.
+        </p>
+    </div>
+
+</section>
+
+</body>
+<p>ThriveLab offers suitable programs for you!</p>
+<section>
+<ul>
+    <li>Tutoring</li>
+    <li>Mentorship</li>
+    <li>Career Insights</li>
+    <li>Critical Thinking Classes</li>
+</ul>
+
+<button onclick="document.getElementById('applicationForm').style.display='block'">Apply</button>
+
+<div id="applicationForm" style="display: none;">
+    <h3>Application Form</h3>
+
+    <form onsubmit="submitApplication(event)">
+        <p>Full Name:</p>
+        <input type="text" required>
+
+        <p>Email:</p>
+        <input type="email" required>
+
+        <p>Which service are you applying for?</p>
+        <select required>
+            <option value="">Select one</option>
+            <option>Tutoring</option>
+            <option>Mentorship</option>
+            <option>Career Insights</option>
+            <option>Critical Thinking Classes</option>
+        </select>
+
+        <br><br>
+        <button type="submit">Submit Application</button>
+    </form>
+</div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+ <!DOCTYPE html>
+ <html>
+    <head>
+        <title>Donations-ThriveLab</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+    <header>
+        <h1>ThriveLab</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="donation.html">Donations</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+</body>
+
+<section>
+<h2>Donations</h2>
+<p>Donations will help ThriveLab grow and support more students. With funding, ThriveLab can provide tutoring, mentorship from professionals, career guidance, and critical thinking classes. Donations also make it possible to buy learning materials, run workshops and events, and improve the overall quaity of programs.</p>
+
+<h3>Payment Options</h3>
+<ul>
+    <li>Credit/Debit Card</li>
+    <li>Bank Transfer</li>
+    <li>Mobile Payment</li>
+</ul>
+
+<h3>Make a Donation</h3>
+
+<form onsubmit="submitDonation(event)">
+    <p>Full Name:</p>
+    <input type="text" required>
+
+    <p>Email:</p>
+    <input type="email" required>
+
+    <p>Donation Amount (ZAR):</p>
+    <input type="number" required>
+
+    <p>Select Payment Method:</p>
+    <select required>
+        <option value="">Choose one</option>
+        <option>Credit/Debit Card</option>
+        <option>Bank Transfer</option>
+        <option>Mobile Payment</option>
+    </select>
+
+    <br><br>
+    <button type="submit">Donate Now</button>
+</form>
+</section>
+
+<script src="script.js"></script>
+</body>
+ </html>
